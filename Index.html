@@ -13,11 +13,16 @@
     <header>
         <!--logos y Menu declarado-->
         <nav>
+            <!--Crear logo-->
+            <a href="Index.html" title="ir a la pagina de incio">
+            <img src="img/LogoPez.webp" width="300" height="200" alt="Logo de la empresa"/>
+            </a>
+
             <!--crear o declarar la lista-->
             <ul>
                 <!--crear items a la lista-->
-                <li><a href="PRUEBA.HTML" target="_blank">pruebas</a> </li>
-                <li>Libros</li>
+                <li><a href="PRUEBA.HTML" >pruebas</a> </li>
+                <li><a href="https://www.elle.com/es/living/ocio-cultura/g19869345/mejores-libros-historia/" target="_blank"> Libros</a> </li>
                 <li>Socios</li>
                 <li>Menu</li>
             </ul>
@@ -26,21 +31,31 @@
     <!--colocar formulario-->
     <main>
         <center>
-            <ul>
-                <h1>Ejemplo de lista</h1>
-                <li><b></b>Lista 1</b> </li>
-                <li><strong></strong>Lista 2</strong></li>
-                <li>Lista 3</li>
-            </ul>
+            <h1> Crear Formulario</h1>
+            <br />
+            <br />
+            <form>
+                <label>Nombre: </label>
+                <input type="text" name="txtNombre" maxlength="30" size="40" required><br /><br />
+                <label>Edad: </label>
+                <input type="number" name="txtEdad" min="0" max="120" size="40" required><br /><br />
+                <label>Fecha de nacimiento: </label>
+                <input type="date" name="txtFecha" required><br /><br />
+                <label>Correo Electronico :</label>
+                <input type="email" name="txtCorreo" required><br /><br />
+
+                <button>Enviar </button>
+                <input type="submit" value="Grabar">
+            </form>
         </center>
         <br />
         <br />
         <h1>Ejemplo de lista 2</h1>
-        <ol>
+        <ul>
             <li>prueba 1</li>
             <li>nombre 2</li>
             <li>Lista 3</li>
-        </ol>
+        </ul>
 
     </main>
     <footer>
