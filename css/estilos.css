@@ -1,0 +1,21 @@
+h1{
+    color: darkblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+}
+
+body{
+    background-color: lightcyan;
+    color: black;
+}
+.estilo_div{
+    position: center;
+    background-color: black;
+    color: gold;
+}
+#parrafo1{
+    color: gray;
+}
+#parrafo2{
+    color: ghostwhite;
+}
