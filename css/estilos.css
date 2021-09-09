@@ -19,3 +19,61 @@ body{
 #parrafo2{
     color: ghostwhite;
 }
+.caja_grande{
+    border-style: solid;
+    border-color: black;
+    width: 30%;
+    height: 200px;
+    display: inline-block;  
+    
+}
+.caja_morada{
+    display: flex;
+    
+}
+.caja_naranja{
+    width: 70%;
+    height: 45px;
+    
+}
+.caja_amarilla{
+    width: 28%;
+    height: 45px;
+    align-items: right;
+    text-align: right;
+    
+}
+.caja_azul_oscuro{
+    display: flex;
+
+}
+.caja_azul_claro{
+    
+    width: 48%;
+    height: 100px;
+}
+.caja_verde{
+    
+    width: 48%;
+    height: 100px;
+}
+.caja_roja{
+    width: 98%;
+    height: 45px;
+    align-items: right;
+    text-align: right;
+}
+.icono1{
+    font-size: 30px;
+    color: royalblue;
+    padding: 20px 2px 0px 15px;
+    
+    }
+.diseño_boton{
+    width: 30%;
+    height: 20px;
+    background-color: orange;
+    color: white;
+    margin: 20px;
+    
+}
