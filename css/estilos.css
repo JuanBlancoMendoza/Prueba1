@@ -77,3 +77,113 @@ body{
     margin: 20px;
     
 }
+#menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+#menu li{
+    border-width: 1px;
+}
+#menu li a{
+    display: block;
+    width: 180px;
+    height: 40px;
+    background-color: orange;
+    border-width: 4px;
+    border-style: solid;
+    border-color: orangered;
+    color: whitesmoke;
+    margin: 0px 20px 30px 0px;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 16px;
+}
+#menu a:hover{
+    background-color: blue;
+
+}
+.formulario{
+    width: 50%;
+    background-color:none;
+    text-align: left;
+    padding: 20px 0px 20px 30px;  
+}
+.diseño_label{
+    display: inline-block;
+    width: 30%;
+    
+}
+.diseño_inout{
+    display: inline-block;
+    width: 50%;
+}
+.boton_formulario{
+    width: 150px;
+    height: 40px;
+    background-color: orange;
+    color: white;
+}
+.boton_formulario:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+.estilo_tabla{
+    width: 70%;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+th, td{
+    border: 0.3px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+th{
+    background-color: darkgray;
+}
+/* si el tamaño maximo del dispositivo es 640px entonces, es para moviles*/
+@media(max-width: 640px){
+    header{
+        text-align: center;
+    }   
+    #menu ul{
+        display: block;
+    }
+    #menu li a{
+        width: 300px;
+        height: 40px;
+    }
+    .formulario{
+        width: 90%;
+        text-align: left;
+        padding: 0px 0px 0px 0px;
+    }
+    .diseño_boton{
+        width: 30%;
+        height: 30px;
+    }
+    .caja_grande{
+        width: 97%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/*si quiere un diseño para tablets ..*/
+@media(min-width: 640px) and (max-width: 1280px)
+{
+    .formulario{
+        width: 90%;
+        text-align: left;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .caja_grande{
+        width: 97%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+}
+

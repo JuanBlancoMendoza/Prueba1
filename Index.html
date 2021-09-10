@@ -19,15 +19,17 @@
             <a href="Index.html" title="ir a la pagina de incio">
             <img src="img/LogoPez.webp" width="300" height="200" alt="Logo de la empresa"/>
             </a>
+            <nav id="menu">
 
-            <!--crear o declarar la lista-->
-            <ul>
-                <!--crear items a la lista-->
-                <li><a href="PRUEBA.HTML" >pruebas</a> </li>
-                <li><a href="https://www.elle.com/es/living/ocio-cultura/g19869345/mejores-libros-historia/" target="_blank"> Libros</a> </li>
-                <li>Socios</li>
-                <li>Menu</li>
-            </ul>
+             <!--crear o declarar la lista-->
+                <ul>
+                    <!--crear items a la lista-->
+                    <li><a href="PRUEBA.HTML" >pruebas</a> </li>
+                    <li><a href="https://www.elle.com/es/living/ocio-cultura/g19869345/mejores-libros-historia/" target="_blank"> Libros</a> </li>
+                    <li><a>Socios</a></li>
+                    <li><a>Menu</a></li>
+                </ul>
+            </nav>
         </nav>
     </header>
     <!--colocar formulario-->
@@ -36,50 +38,52 @@
             <h1> Crear Formulario</h1>
             <br />
             <br />
-            <form>
-                <label for ="nombre" style="color: blue; background-color: cyan;">Nombre: </label>
-                <input type="text" id="nombre" name="txtNombre" placeholder ="Ingrese Nombre" maxlength="30" size="40" style="width: 300px;" required><br /><br />
-                <label for="edad">Edad: </label>
-                <input type="number" id="edad" name="txtEdad" min="0" max="120" size="40" required><br /><br />
-                <label for="birthdate">Fecha de nacimiento: </label>
-                <input type="date" id="birthdate" name="txtFecha" required><br /><br />
-                <label for="email">Correo Electronico :</label>
-                <input type="email" id="email" name="txtCorreo" required><br /><br />
-                <select name="Seleccionar tipo de documento">
+            <form class="formulario">
+                <label class="diseño_label" for ="nombre" style="color: blue; background-color: cyan;">Nombre: </label>
+                <input class="diseño_inout" type="text" id="nombre" name="txtNombre" placeholder ="Ingrese Nombre" maxlength="30" size="40" required><br /><br />
+                <label class="diseño_label" for="edad">Edad: </label>
+                <input class="diseño_inout" type="number" id="edad" name="txtEdad" min="0" max="120" size="40" required><br /><br />
+                <label class="diseño_label" for="birthdate">Fecha de nacimiento: </label>
+                <input class="diseño_inout" type="date" id="birthdate" name="txtFecha" required><br /><br />
+                <label class="diseño_label" for="email">Correo Electronico :</label>
+                <input class="diseño_inout" type="email" id="email" name="txtCorreo" required><br /><br />
+                <label class="diseño_label">Selecionar documento</label>
+                <select class="diseño_inout" name="Seleccionar tipo de documento">
                     <option value="" selected="True">Seleccione un documento</option>
                     <option value="CC">Cedula Ciudadania</option>
                     <option value="TI">Tarjeta Identidad</option>
                     <option value="CE">Cedula Extranjera</option>
                     <option value="Pasaporte">Pasaporte</option>
                 </select><br /><br />
-                <label>Observaciones</label>
-                <textarea name="Observaciones" rows=3 cols=50>
+                <label class="diseño_label">Observaciones</label>
+                <textarea class="diseño_inout" name="Observaciones" rows=3 cols=50>
                 </textarea><br /><br />
 
-                <label>Ingrese genero:</label>
+                <label class="diseño_label" >Ingrese genero:</label>
                 <label>Masculino</label> <input type="radio" name="genero" value="Masculino">
                 <label>Femenino</label><input type="radio" name="genero" value="Femenino">
                 <br /><br />
-                <label>Ingresar materias:</label>
+                <label class="diseño_label">Ingresar materias:</label>
                 <label> Matematicas</label><input type="checkbox" name="materia" value="matematicas" checked>
                 <label> Fisica</label><input type="checkbox" name="materia" value="fisica">
 
                 <br /><br />
-
-                <button>Grabar </button>&nbsp;&nbsp;&nbsp;
-                <input type="submit" value="Cancelar">
+                <center>
+                <button class="boton_formulario">Grabar </button>&nbsp;&nbsp;&nbsp;
+                <input class="boton_formulario" type="submit" value="Cancelar">
+                </center>
             </form>
             <br /><br />
             <h1>LISTADO MATERIAS EN LA SEMANA</h1>
-            <table border=1>
+            <table class="estilo_tabla">
                 <tr>
-                    <td>MATERIA</td>
-                    <td>LUNES</td>
-                    <td>MARTES</td>
-                    <td>MIERCOLES</td>
-                    <td>JUEVES</td>
-                    <td>VIERNES</td>
-                    <td>SABADO</td>
+                    <th>MATERIA</th>
+                    <th>LUNES</th>
+                    <th>MARTES</th>
+                    <th>MIERCOLES</th>
+                    <th>JUEVES</th>
+                    <th>VIERNES</th>
+                    <th>SABADO</th>
                 </tr>
                 <tr>
                     <td>fisica</td>
@@ -88,22 +92,13 @@
                     <td></td>
                     <td>10- 12 AM</td>
                     <td></td>
+                    <td></td>
                 </tr>
             </table>
         </center>
-        <br />
-        <br />
-        <h1>Ejemplo de lista 2</h1>
-        <ul>
-            <li>prueba 1</li>
-            <li>nombre 2</li>
-            <li>Lista 3</li>
-        </ul>
+        <br /><br /><br />
 
     </main>
-
-
-    
     <footer>
         <div class="caja_grande">
             <div class="caja_morada">
