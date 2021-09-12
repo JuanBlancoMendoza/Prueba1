@@ -186,4 +186,16 @@ th{
     }
 
 }
-
+.alinear_logo{
+    text-align: center;
+}
+.color2{
+    background-color: cornflowerblue;
+    text-align: center;
+}
+.color3{
+    background-color:khaki;
+}
+.row{
+    padding-bottom: 10px;
+}
