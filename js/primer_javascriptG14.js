@@ -1,6 +1,12 @@
 /*alert("primer javascript pero el .js");*/
 
-var nombre="Pepito perez";
+/*var nombre="Pepito perez";
+alert("Nombre original "+nombre);
+alert("nombre mayusculas "+ nombre.toUpperCase());
+alert("nombre minuscula "+ nombre.toLowerCase());
+alert("letra en posición 8 "+nombre.charAt(8));
+alert("letra i se encuentra en la posición "+nombre.indexOf("i"));
+alert("substring "+nombre.substring(0,6));*/
 var edad=15;
 var peso=74.5;
 var masculino=true;
@@ -11,7 +17,7 @@ var numero2 = prompt("Ingresar numero 2");
 var resultado = parseInt(numero1) + parseInt(numero2);
 alert("el resultado de la suma es "+resultado); 
 document.write("<p class='fs-1'>el resultado de la suma es "+resultado+"</p>");*/
-
+/*
 document.write("<center>")
 document.write("<h1>Ejemplo arreglos</h1>");
 document.write("<br />");
@@ -50,17 +56,63 @@ do{
 }while(k<=10)
 document.write("<br />");
 document.write("<br />");
-
+*/
 function sumar(){
     var numero_1_formulario = document.getElementById("numero1").value;
     var numero_2_formulario = document.getElementById("numero2").value;
     var sumatoria = parseFloat(numero_1_formulario) + parseFloat(numero_2_formulario);
     alert("sumatoria es "+sumatoria);
 }
-function sumar2(numero_1, numero_2){
+/*function sumar2(numero_1, numero_2){
     var sumatoria = parseFloat(numero_1) + parseFloat(numero_2);
     return sumatoria;
 }
 
 var sumatoria_global = sumar2(54, 21)
-alert("sumatoria global "+sumatoria_global);
+alert("sumatoria global "+sumatoria_global);*/
+
+function operaciones_matematicas(){
+    suma1();
+    resta();
+    multiplicacion();
+    var boton_sumar = document.getElementById("boton_sumar");
+    boton_sumar.setAttribute("class", "btn btn-success");
+    //funcion locales
+    function suma1()
+    {
+        var numero_1_formulario = document.getElementById("numero1").value;
+        var numero_2_formulario = document.getElementById("numero2").value;
+        var sumatoria = parseInt(numero_1_formulario) + parseInt(numero_2_formulario);
+        alert("suma es igual a "+sumatoria);
+    }
+    function resta()
+    {
+        var numero_1_formulario = document.getElementById("numero1").value;
+        var numero_2_formulario = document.getElementById("numero2").value;
+        var sumatoria = parseInt(numero_1_formulario) - parseInt(numero_2_formulario);
+        alert("resta es igual a "+sumatoria);
+    }
+    function multiplicacion(){
+        var numero_1_formulario = document.getElementById("numero1").value;
+        var numero_2_formulario = document.getElementById("numero2").value;
+        var sumatoria = parseInt(numero_1_formulario) * parseInt(numero_2_formulario);
+        alert("multiplicacion es igual a "+sumatoria);
+    }
+}
+//identificar una etiquete
+var elementos_tipo_parrafo = document.getElementsByTagName("p");
+alert("mostrar etiquera 0 "+elementos_tipo_parrafo[0].innerHTML);
+
+//Cambiar el nombre de una etiqueta
+var parrafo1 = document.getElementById("parrafo_prueba1");
+parrafo1.innerHTML="cambiar parrafo";
+
+//Crear etiqueta de forma dinamica
+var etiqueta_nueva = document.createElement("h1");
+var contenido_titulo_nuevo = document.createTextNode("Titulo dinamico");
+etiqueta_nueva.appendChild(contenido_titulo_nuevo);
+document.getElementById("caja_dinamica").appendChild(etiqueta_nueva);
+
+//cambiar color del boton
+var boton_operacion = document.getElementById("boton_operacion");
+boton_operacion.setAttribute("class", "btn btn-success");
